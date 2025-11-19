@@ -17,5 +17,16 @@ export default defineConfig({
       }
     }
   ],
-  base: '/spotify-browse-all/',
+  // Use base path for production builds (GitHub Pages), root for dev
+  base: process.env.NODE_ENV === 'production' ? '/spotify-browse-all/' : '/',
+  preview: {
+    port: 4173,
+    strictPort: false,
+    // Preview should match production build
+  },
+  server: {
+    port: 5173,
+    strictPort: false,
+    open: true, // Automatically open browser
+  },
 })
