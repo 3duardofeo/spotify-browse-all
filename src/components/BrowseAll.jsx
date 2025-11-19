@@ -61,7 +61,7 @@ const BrowseAll = () => {
                     </div>
                   </div>
                 </div>
-                <div className="absolute bottom-0 left-0 p-3 lg:p-4">
+                <div className="absolute top-0 left-0 p-3 lg:p-4">
                   <div className="flex flex-col font-bold justify-center leading-[0] not-italic relative shrink-0 text-base lg:text-[20px] text-nowrap text-white">
                     <p className="leading-tight lg:leading-[38.4px] whitespace-pre">{category.name}</p>
                   </div>
